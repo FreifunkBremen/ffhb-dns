@@ -66,6 +66,7 @@ while true; do
   NUM=$(($NUM+1))
 
   # get data from alfred
+  # but limit the time
   timeout -s KILL 30s alfred-json -z -r 158 >"$TMP_FILE" 2>/dev/null
 
   # on success leave loop
@@ -73,7 +74,7 @@ while true; do
     break
   fi
 
-  # if the 120th run has reached kill script
+  # if the 240th run has reached kill script
   if [ $NUM -gt 240 ]; then
     # remove tmp file
     rm -f "$TMP_FILE"
