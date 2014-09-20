@@ -28,7 +28,7 @@
 # POSSIBILITY OF SUCH DAMAGE.
 
 # PID file
-PID_FILE="/run/ffhb-update-dns.pid"
+RUN_FILE='/run/ffhb-update-dns.run'
 
 # getting workingdir of scripts
 WORK_DIR="$(dirname $(readlink -nf $0))"
@@ -52,12 +52,23 @@ fi
 ZONEFILE=/var/cache/bind/ffhb.nodes.zone
 RZONEFILE=/var/cache/bind/arpa.ip6.f.d.2.f.5.1.1.9.0.f.2.c.zone
 
+function on_exit() {
+  # remove tmp files
+  for FILE in "$TMP_FILE" "$RUN_FILE"; do
+    if [ -n "$FILE" ]; then
+      rm -f "$FILE"
+    fi
+  done
+}
+
+trap on_exit EXIT SIGTERM SIGINT
+
 # write run file
-if [ -f "$PID_FILE" ]; then
-  echo "Script already running!" >&2
+if [ -f "$RUN_FILE" ]; then
+  echo 'Script already running!' >&2
   exit 1
 else
-  touch "$PID_FILE"
+  touch "$RUN_FILE"
 fi
 
 # loop until data received
@@ -76,9 +87,6 @@ while true; do
 
   # if the 240th run has reached kill script
   if [ $NUM -gt 240 ]; then
-    # remove tmp file
-    rm -f "$TMP_FILE"
-
     # exit with error code
     exit 1
   fi
@@ -99,9 +107,3 @@ fi
 
 # reload nameserver
 rndc reload >/dev/null
-
-# remove tmp file
-rm -f "$TMP_FILE"
-
-# remove PID file
-rm -f "$PID_FILE"
