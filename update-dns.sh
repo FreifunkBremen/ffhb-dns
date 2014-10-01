@@ -36,6 +36,12 @@ WORK_DIR="$(dirname $(readlink -nf $0))"
 # set safe path
 PATH="${WORK_DIR}:/sbin:/usr/sbin:/bin:/usr/bin"
 
+# alfred data file
+ALFRED_DATA_FILE='/var/cache/ffhb/alfred.json'
+
+# create alfred data directory
+mkdir -p "$(dirname $ALFRED_DATA_FILE)"
+
 # define variable to count loops
 declare -i NUM=0
 
@@ -107,3 +113,6 @@ fi
 
 # reload nameserver
 rndc reload >/dev/null
+
+# copy alfred file
+cp "$TMP_FILE" "$ALFRED_DATA_FILE"
