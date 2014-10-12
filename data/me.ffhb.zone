@@ -1,0 +1,77 @@
+$TTL 1D
+@					IN	SOA	ns01 noc.bremen.freifunk.net. (
+				    2014092801	; Serial
+				    4H		; Refresh
+				    1H		; Retry
+				    2W		; Expire
+				    1D)		; Negative Cache TTL
+
+				NS	ns01
+				NS	ns02
+				NS	ns03
+
+				MX	50 mail
+
+; pages.github.com
+				A	192.30.252.153
+				A	192.30.252.154
+
+; network stuff
+gw01				A	185.55.119.1
+				AAAA	2a02:2919::1
+gw02				A	185.55.119.2
+				AAAA	2a02:2919::2
+noc01				A	185.55.119.18
+				AAAA	2a02:2919:fdda::18
+
+ns01				A	37.72.148.55
+				AAAA	2a02:2918:505:101::55
+ns02				A	37.72.148.163
+				AAAA	2a02:2918:506:101::163
+ns03				A	151.236.28.15
+				AAAA	2a00:1768:1003:151:236:28:15:1
+
+vpn01				A	185.55.119.34
+				AAAA	2a02:2919:fcca::2
+vpn02				A	134.102.22.130
+vpn				A	185.55.119.34
+				A	134.102.22.130
+				AAAA	2a02:2919:fcca::2
+
+; mail
+mail				A	37.72.148.168
+				AAAA	2a02:2918:506:101::168
+
+; websites
+www				CNAME	@
+downloads			A	37.72.148.168
+				AAAA	2a02:2918:506:101::168
+wiki				A	37.72.148.168
+				AAAA	2a02:2918:506:101::168
+
+; mesh stuff
+nodes				NS	ns01
+nodes				NS	ns02
+nodes				NS	ns03
+
+node				A	10.196.0.127
+				AAAA	fd2f:5119:f2c::127
+
+mesh				A	10.196.0.1
+				AAAA	fd2f:5119:f2c::1
+
+jplitza				A	10.196.0.200
+				AAAA	2a02:2919:1001::c8
+wikipedia			CNAME	jplitza
+
+$ORIGIN services
+1.ntp				AAAA	fd2f:5119:f2c::1
+1.vpn				AAAA	fd2f:5119:f2c::1
+2.vpn				AAAA	fd2f:5119:f2c::2
+
+introducer.tahoe-lafs		A	10.196.0.2
+
+node				A	10.196.0.127
+				AAAA	fd2f:5119:f2c::127
+
+smokeping			AAAA	2a02:2919:1000:0:ba27:ebff:fe69:2879
