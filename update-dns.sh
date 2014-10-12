@@ -31,12 +31,12 @@
 TMP_CONFIG_FILE="$(mktemp)"
 
 # PID file
-RUN_FILE='/run/update-dns.run'
+RUN_FILE='/run/update-dns-ffhb.run'
 
 # destination zonefile directory
 DEST_DIR='/var/cache/bind'
 
-DEST_CONFIG_FILE="${DEST_DIR}/zones.conf"
+DEST_CONFIG_FILE="${DEST_DIR}/ffhb-zones.conf"
 
 # getting workingdir of scripts
 WORK_DIR="$(dirname $(readlink -nf $0))"
