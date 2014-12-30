@@ -12,7 +12,7 @@ def str_to_domainlabel(s):
     label = re.sub("^-*", "", label)
     label = re.sub("-*$", "", label)
 
-    if not re.match("^[a-zA-Z][a-zA-Z0-9-]*[a-zA-Z0-9]$", label):
+    if not re.match("^[a-zA-Z][a-zA-Z0-9-]{,61}[a-zA-Z0-9]$", label):
         raise RuntimeError("Not convertable to a domain label: %s" % s)
     return label
 
