@@ -20,7 +20,7 @@ def str_to_domainlabel(s):
 data = json.load(sys.stdin)
 
 print """$TTL 1h
-@       IN      SOA     ns.ffhb. liste.bremen.freifunk.net. (
+@       IN      SOA     vpn01.bremen.freifunk.net. noc.bremen.freifunk.net. (
         %s ; serial
         1h ; refresh
         30m ; retry
@@ -28,7 +28,7 @@ print """$TTL 1h
         1h ; caching
         )
 
-                NS      ns.ffhb.
+                NS      vpn01.bremen.freifunk.net.
 
 """ % datetime.now().strftime("%Y%m%d%H%M")
 
