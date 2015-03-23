@@ -1,6 +1,6 @@
 $TTL 1D
 @					IN	SOA	ns01 noc.bremen.freifunk.net. (
-				    2015031701	; Serial
+				    2015011610	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -25,7 +25,7 @@ ns03				A	92.222.47.180
 				AAAA	2001:41d0:52:100::1599
 
 vpn01			30s	A	176.9.147.213
-vpn02			30s	A	134.102.22.130
+vpn02			30s	A	31.24.146.93
 vpn03			30s	A	37.72.148.148
 vpn				CNAME	@
 
