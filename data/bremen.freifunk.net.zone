@@ -1,6 +1,6 @@
 $TTL 1D
 @					IN	SOA	ns01 noc.bremen.freifunk.net. (
-				    2015032501	; Serial
+				    2015032502	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -34,11 +34,10 @@ mail				A	37.72.148.168
 				AAAA	2a02:2918:506:101::168
 
 ; websites
-www				CNAME	@
-downloads			A	37.72.148.168
+www				A	37.72.148.168
 				AAAA	2a02:2918:506:101::168
-wiki				A	37.72.148.168
-				AAAA	2a02:2918:506:101::168
+downloads			CNAME	www
+wiki				CNAME	www
 
 ; mesh stuff
 nodes				NS	vpn01.bremen.freifunk.net.
@@ -48,11 +47,13 @@ node				A	10.196.0.127
 
 mesh				CNAME	@
 
+; legacy old service subdomain
+services			DNAME	@
+
 jplitza				A	10.196.0.200
 				AAAA	2001:bf7:540::c8
 wikipedia			CNAME	jplitza
 
-$ORIGIN services
 1.ntp				AAAA	2001:bf7:540::1
 2.ntp				AAAA	2001:bf7:540::2
 3.ntp				AAAA	2001:bf7:540::3
