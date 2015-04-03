@@ -1,9 +1,9 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 
 import sys
 import json
-import codecs
 import re
+import ipaddress
 from datetime import datetime
 
 def str_to_domainlabel(s):
@@ -19,7 +19,7 @@ def str_to_domainlabel(s):
 
 data = json.load(sys.stdin)
 
-print """$TTL 1h
+print("""$TTL 1h
 @       IN      SOA     vpn01.bremen.freifunk.net. noc.bremen.freifunk.net. (
         %s ; serial
         1h ; refresh
@@ -30,14 +30,19 @@ print """$TTL 1h
 
                 NS      vpn01.bremen.freifunk.net.
 
-""" % datetime.now().strftime("%Y%m%d%H%M")
+""" % datetime.now().strftime("%Y%m%d%H%M"))
 
 for node in data.values():
     try:
         for address in node['network']['addresses']:
-            if address.startswith("fe80:"):
+            try:
+                address = ipaddress.IPv6Address(address)
+            except ValueError:
                 continue
 
-            print "%-15s AAAA    %s" % (str_to_domainlabel(node['hostname']), address)
+            if address.is_link_local or address.is_private:
+                continue
+
+            print("%-15s AAAA    %s" % (str_to_domainlabel(node['hostname']), address))
     except:
         pass

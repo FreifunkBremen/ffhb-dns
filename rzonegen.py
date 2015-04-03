@@ -1,9 +1,9 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 
 import sys
 import json
-import codecs
 import re
+import ipaddress
 from datetime import datetime
 
 def str_to_domainlabel(s):
@@ -17,19 +17,7 @@ def str_to_domainlabel(s):
     return label
 
 def ipv6_addr_to_rdns(addr):
-    rdns = ""
-    counter = 4
-
-    for char in reversed(addr):
-        if char == ':':
-            rdns += counter * '0.'
-            counter = 4
-        else:
-            rdns += char + '.'
-            counter -= 1
-
-    rdns += 'ip6.arpa.'
-    return rdns
+    return ".".join(reversed(addr.exploded.replace(':', ''))) + ".ip6.arpa."
 
 data = json.load(sys.stdin)
 domain = sys.argv[1]
@@ -54,12 +42,17 @@ print("""$TTL 1h
 for node in data.values():
     try:
         for address in node['network']['addresses']:
-            if address.startswith("fe80:"):
+            try:
+                address = ipaddress.IPv6Address(address)
+            except ValueError:
+                continue
+
+            if address.is_link_local or address.is_private:
                 continue
 
             rdns = ipv6_addr_to_rdns(address)
 
             if rdns.endswith(domain):
-                print "%s PTR %s.nodes.ffhb." % (ipv6_addr_to_rdns(address)[0:-len(domain)], str_to_domainlabel(node['hostname']))
-    except:
+                print("%s PTR %s.nodes.ffhb.de." % (rdns[0:-len(domain)], str_to_domainlabel(node['hostname'])))
+    except (KeyError, RuntimeError):
         pass
