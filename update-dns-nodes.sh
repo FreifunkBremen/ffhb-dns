@@ -55,8 +55,8 @@ if [ -z "$TMP_FILE" ]; then
 fi
 
 # names of zones
-ZONEFILE=/var/cache/bind/ffhb.nodes.zone
-RZONEFILE=/var/cache/bind/arpa.ip6.f.d.2.f.5.1.1.9.0.f.2.c.zone
+ZONEFILE=/var/lib/nsd/net.freifunk.bremen.nodes.zone
+RZONEFILE=/var/lib/nsd/arpa.ip6.f.d.2.f.5.1.1.9.0.f.2.c.zone
 
 function on_exit() {
   # remove tmp files
@@ -112,7 +112,7 @@ if rzonegen.py 0.0.0.0.c.2.f.0.9.1.1.5.f.2.d.f.ip6.arpa <"$TMP_FILE" >"${RZONEFI
 fi
 
 # reload nameserver
-rndc reload >/dev/null
+nsd-control reload > /dev/null
 
 # copy alfred file
 cp "$TMP_FILE" "$ALFRED_DATA_FILE"
