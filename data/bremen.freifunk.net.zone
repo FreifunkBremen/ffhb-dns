@@ -57,6 +57,8 @@ mesh				CNAME	www
 ; legacy old service subdomain
 services			DNAME	@
 
+ffmap				AAAA	2a01:4f8:160:30c2::ffa7
+
 jplitza				A	10.196.0.200
 				AAAA	2001:bf7:540::c8
 wikipedia			CNAME	jplitza
