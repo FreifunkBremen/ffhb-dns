@@ -24,9 +24,9 @@ ns02				A	37.72.148.163
 ns03				A	92.222.47.180
 				AAAA	2001:41d0:52:100::1599
 
-vpn01			30s	CNAME	vpn03-real
+vpn01			30s	CNAME	vpn01-real
 vpn02			30s	CNAME	vpn02-real
-vpn03			30s	CNAME	vpn01-real
+vpn03			30s	CNAME	vpn03-real
 vpn04			30s	CNAME	vpn04-real
 vpn				CNAME	@
 
