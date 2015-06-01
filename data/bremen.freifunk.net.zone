@@ -74,3 +74,5 @@ introducer.tahoe-lafs		A	10.196.0.2
 pads				A	10.196.0.70
 sip				A	10.196.2.50
 smokeping			AAAA	2a02:2919:1000:0:ba27:ebff:fe69:2879
+breminale			A	10.196.0.91
+				AAAA	2001:bf7:540::5b
