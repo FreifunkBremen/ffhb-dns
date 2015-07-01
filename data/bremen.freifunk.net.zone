@@ -1,6 +1,6 @@
 $TTL 1D
 @					IN	SOA	ns01 noc.bremen.freifunk.net. (
-				    2015070101	; Serial
+				    2015070102	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -52,7 +52,7 @@ mesh				CNAME	www
 ; legacy old service subdomain
 services			DNAME	@
 
-ffmap				AAAA	2a01:4f8:160:30c2::ffa7
+ffmap				AAAA	2a01:4f8:160:30c2::10
 
 jplitza				A	10.196.0.200
 				AAAA	2001:bf7:540::c8
