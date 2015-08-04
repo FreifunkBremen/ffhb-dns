@@ -1,6 +1,6 @@
 $TTL 1D
 @					IN	SOA	ns01 noc.bremen.freifunk.net. (
-				    2015072001	; Serial
+				    2015072801	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -79,5 +79,5 @@ monitoring.events		A	195.191.196.147
 breminale-ausm			A	195.191.196.147
 				AAAA	2a02:2918:1017:75::147
 
-tasks				A	134.102.22.122
-				AAAA	2001:470:1f0b:3c3::2
+tasks				A	176.9.147.213
+				AAAA	2a01:4f8:160:30c2::12
