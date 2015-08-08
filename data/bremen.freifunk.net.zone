@@ -62,6 +62,7 @@ wikipedia			CNAME	jplitza
 1.ntp				AAAA	2001:bf7:540::1
 2.ntp				AAAA	2001:bf7:540::2
 3.ntp				AAAA	2001:bf7:540::3
+5.ntp				AAAA	2001:bf7:540::5
 
 chat				A	10.196.0.90
 gitlab				A	10.196.0.90
