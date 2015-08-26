@@ -80,7 +80,7 @@ git				AAAA	2001:bf7:540::81
 events				A	195.191.196.147
 				AAAA	2a02:2918:1017:75::147
 breminale			A	37.72.148.23
-				AAAA	2a00:c380:dead:0:5054:ff:fecf:9ea1
+				AAAA	2a02:2918:505:200::2
 monitoring.events		A	195.191.196.147
 				AAAA	2a02:2918:1017:75::147
 breminale-ausm			A	195.191.196.147
