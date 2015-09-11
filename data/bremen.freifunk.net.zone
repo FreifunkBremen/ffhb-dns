@@ -66,8 +66,8 @@ wikipedia			CNAME	jplitza
 5.ntp				AAAA	2001:bf7:540::5
 6.ntp				AAAA	2001:bf7:540::6
 
-chat				A	10.196.0.90
-				AAAA	2001:bf7:540::5a
+monitoring			A	10.196.0.10
+				AAAA	2001:bf7:540::a
 introducer.tahoe-lafs		A	10.196.0.2
 
 pads				A	10.196.0.70
