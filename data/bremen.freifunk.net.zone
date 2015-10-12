@@ -1,6 +1,6 @@
 $TTL 1D
 @					IN	SOA	ns01 noc.bremen.freifunk.net. (
-				    2015081901	; Serial
+				    2015090101	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -12,7 +12,6 @@ $TTL 1D
 
 				MX	50 mail
 
-; pages.github.com
 				A	37.72.148.168
 				AAAA	2a02:2918:506:101::168
 
@@ -63,6 +62,7 @@ wikipedia			CNAME	jplitza
 1.ntp				AAAA	2001:bf7:540::1
 2.ntp				AAAA	2001:bf7:540::2
 3.ntp				AAAA	2001:bf7:540::3
+4.ntp				AAAA	2001:bf7:540::4
 5.ntp				AAAA	2001:bf7:540::5
 6.ntp				AAAA	2001:bf7:540::6
 
@@ -83,8 +83,6 @@ events				A	195.191.196.147
 breminale			A	37.72.148.23
 				AAAA	2a02:2918:505:200::2
 monitoring.events		A	195.191.196.147
-				AAAA	2a02:2918:1017:75::147
-breminale-ausm			A	195.191.196.147
 				AAAA	2a02:2918:1017:75::147
 
 tasks				A	176.9.147.213
