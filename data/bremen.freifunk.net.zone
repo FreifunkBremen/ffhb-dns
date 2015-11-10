@@ -1,6 +1,6 @@
 $TTL 1D
 @					IN	SOA	ns01 noc.bremen.freifunk.net. (
-				    2015090101	; Serial
+				    2015111001	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -74,16 +74,8 @@ pads				A	10.196.0.70
 sip				A	10.196.2.50
 smokeping			AAAA	2a02:2919:1000:0:ba27:ebff:fe69:2879
 
-kleopatra.mortzu		A	10.196.0.129
-				AAAA	2001:bf7:540::81
-git				AAAA	2001:bf7:540::81
-
-events				A	195.191.196.147
-				AAAA	2a02:2918:1017:75::147
 breminale			A	37.72.148.23
 				AAAA	2a02:2918:505:200::2
-monitoring.events		A	195.191.196.147
-				AAAA	2a02:2918:1017:75::147
 
 tasks				A	176.9.147.213
 				AAAA	2a01:4f8:160:30c2::12
