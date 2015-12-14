@@ -53,7 +53,6 @@ mesh				CNAME	www
 
 ; legacy old service subdomain
 services			DNAME	@
-
 ffmap				AAAA	2a01:4f8:160:30c2::10
 
 jplitza				A	10.196.0.200
@@ -80,3 +79,5 @@ breminale			A	5.9.250.34
 
 tasks				A	176.9.147.213
 				AAAA	2a01:4f8:160:30c2::12
+map				A       46.38.234.133
+				AAAA    2a03:4000:2:2::2
