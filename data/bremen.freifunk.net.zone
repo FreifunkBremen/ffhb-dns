@@ -30,6 +30,7 @@ vpn04			30s	A	136.243.21.39
 vpn05			30s	A	148.251.252.236
 vpn05			30s	AAAA	2a01:4f8:190:23cc::236
 vpn06			30s	A	185.117.214.3
+vpn06			30s	AAAA	2a06:8781::3
 vpn				CNAME	@
 
 ; mail
