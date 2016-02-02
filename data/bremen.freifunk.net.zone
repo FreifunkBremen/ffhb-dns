@@ -64,15 +64,15 @@ services			DNAME	@
 ffmap				AAAA	2a01:4f8:160:30c2::10
 
 jplitza				A	10.196.0.200
-				AAAA	2001:bf7:540::c8
+				AAAA	2a06:8782:ffbb:1337::c8
 wikipedia			CNAME	jplitza
 
 1.ntp				AAAA	2a06:8782:ffbb:1337::1
 2.ntp				AAAA	2a06:8782:ffbb:1337::2
 3.ntp				AAAA	2a06:8782:ffbb:1337::3
 4.ntp				AAAA	2a06:8782:ffbb:1337::4
-5.ntp				AAAA	2001:bf7:540::5
-6.ntp				AAAA	2001:bf7:540::6
+5.ntp				AAAA	2a06:8782:ffbb:1337::5
+6.ntp				AAAA	2a06:8782:ffbb:1337::6
 
 monitoring			A	10.196.0.10
 				AAAA	2001:bf7:540::a
