@@ -1,6 +1,6 @@
 $TTL 1D
 @					IN	SOA	ns01 noc.bremen.freifunk.net. (
-				    2016010401	; Serial
+				    2016021301	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -78,7 +78,7 @@ monitoring			A	10.196.0.10
 				AAAA	2001:bf7:540::a
 introducer.tahoe-lafs		A	10.196.0.2
 
-pads				A	10.196.0.70
+pads				AAAA	2a06:8782:ffbb:1337::84
 sip				A	10.196.2.50
 smokeping			AAAA	2a02:2919:1000:0:ba27:ebff:fe69:2879
 
