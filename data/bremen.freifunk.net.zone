@@ -1,15 +1,14 @@
 $TTL 1D
-@					IN	SOA	ns01 noc.bremen.freifunk.net. (
-				    2016032902	; Serial
+					IN	SOA	dns noc.bremen.freifunk.net. (
+				    2016032903	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
 				    1D)		; Negative Cache TTL
 
-				NS	ns01
-				NS	ns02
-				NS	ns03
+				NS	dns
 				NS	ns-1.moritzrudert.de.
+				NS	ns2.he.net.
 
 				MX	50 mail
 
@@ -17,13 +16,6 @@ $TTL 1D
 				AAAA	2a02:2918:506:101::168
 
 ; network stuff
-ns01				A	37.72.148.53
-				AAAA	2a02:2918:505:101::53
-ns02				A	37.72.148.163
-				AAAA	2a02:2918:506:101::163
-ns03				A	92.222.47.180
-				AAAA	2001:41d0:52:100::1599
-
 dns				A	185.117.213.243
 				AAAA	2a06:8782:ff00::f3
 
