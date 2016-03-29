@@ -1,6 +1,6 @@
 $TTL 1D
 @					IN	SOA	ns01 noc.bremen.freifunk.net. (
-				    2016032901	; Serial
+				    2016032902	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -23,6 +23,9 @@ ns02				A	37.72.148.163
 				AAAA	2a02:2918:506:101::163
 ns03				A	92.222.47.180
 				AAAA	2001:41d0:52:100::1599
+
+dns				A	185.117.213.243
+				AAAA	2a06:8782:ff00::f3
 
 ffhb-bgp01			A	31.209.95.195
 				AAAA	2a00:c380:0:faae::3
