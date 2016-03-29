@@ -1,6 +1,6 @@
 $TTL 1D
 @					IN	SOA	ns01 noc.bremen.freifunk.net. (
-				    2016032402	; Serial
+				    2016032901	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -9,6 +9,7 @@ $TTL 1D
 				NS	ns01
 				NS	ns02
 				NS	ns03
+				NS	ns-1.moritzrudert.de.
 
 				MX	50 mail
 
