@@ -1,6 +1,6 @@
 $TTL 1D
 					IN	SOA	dns noc.bremen.freifunk.net. (
-				    2016040701	; Serial
+				    2016040801	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -12,8 +12,8 @@ $TTL 1D
 
 				MX	50 mail
 
-				A	37.72.148.168
-				AAAA	2a02:2918:506:101::168
+				A	185.117.213.242
+				AAAA	2a06:8782:ff00::f2
 
 ; network stuff
 ipv6-downlink			A	185.117.213.241
@@ -50,8 +50,8 @@ lists				A	185.117.213.244
 				MX	50 lists
 
 ; websites
-www				A	37.72.148.168
-				AAAA	2a02:2918:506:101::168
+www				A	185.117.213.242
+				AAAA	2a06:8782:ff00::f2
 downloads			CNAME	www
 wiki				CNAME	www
 
