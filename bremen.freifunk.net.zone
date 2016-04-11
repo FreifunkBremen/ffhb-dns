@@ -1,6 +1,6 @@
 $TTL 1D
 					IN	SOA	dns noc.bremen.freifunk.net. (
-				    2016040801	; Serial
+				    2016041101	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -83,7 +83,7 @@ wikipedia			CNAME	jplitza
 
 introducer.tahoe-lafs		A	10.196.0.2
 
-pads				AAAA	2a06:8782:ffbb:1337::84
+pads				AAAA	2a06:8782:ffbb:1337:7061::6473
 sip				A	10.196.2.50
 smokeping			AAAA	2a02:2919:1000:0:ba27:ebff:fe69:2879
 
