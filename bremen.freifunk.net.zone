@@ -1,6 +1,6 @@
 $TTL 1D
 					IN	SOA	dns noc.bremen.freifunk.net. (
-				    2016041201	; Serial
+				    2016041202	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -16,8 +16,7 @@ $TTL 1D
 				AAAA	2a06:8782:ff00::f2
 
 ; network stuff
-ipv6-downlink			A	185.117.213.241
-				AAAA	2a06:8782:ff00::f1
+bre-1				A	31.209.95.196
 
 dns				A	185.117.213.243
 				AAAA	2a06:8782:ff00::f3
@@ -27,7 +26,10 @@ ffhb-bgp01			A	31.209.95.195
 
 ffhb-kvm01			A	31.209.95.194
 
-bre-1				A	31.209.95.196
+ffmap				AAAA	2a01:4f8:160:30c2::10
+
+ipv6-downlink			A	185.117.213.241
+				AAAA	2a06:8782:ff00::f1
 
 vpn01			30s	A	176.9.147.221
 			30s	AAAA	2a01:4f8:160:30c2::3
@@ -41,6 +43,13 @@ vpn06			30s	A	185.117.214.3
 			30s	AAAA	2a06:8781::ffbb
 vpn				CNAME	@
 
+1.ntp				AAAA	2a06:8782:ffbb:1337::1
+2.ntp				AAAA	2a06:8782:ffbb:1337::2
+3.ntp				AAAA	2a06:8782:ffbb:1337::3
+4.ntp				AAAA	2a06:8782:ffbb:1337::4
+5.ntp				AAAA	2a06:8782:ffbb:1337::5
+6.ntp				AAAA	2a06:8782:ffbb:1337::6
+
 ; mail
 mail				A	185.117.213.244
 				AAAA	2a06:8782:ff00::f4
@@ -50,10 +59,12 @@ lists				A	185.117.213.244
 				MX	50 lists
 
 ; websites
-www				A	185.117.213.242
+downloads			CNAME	webserver
+status				CNAME	webserver
+webserver			A	185.117.213.242
 				AAAA	2a06:8782:ff00::f2
-downloads			CNAME	www
-wiki				CNAME	www
+wiki				CNAME	webserver
+www				CNAME	webserver
 
 ; mesh stuff
 nodes				NS	dns
@@ -68,33 +79,22 @@ mesh				CNAME	www
 ; legacy old service subdomain
 services			DNAME	@
 
-ffmap				AAAA	2a01:4f8:160:30c2::10
+; genofire
+breminale			A	5.9.250.34
+				AAAA	2a01:4f8:160:44d0:ffb3::2
 
+; jplitza
 jplitza				A	10.196.0.200
 				AAAA	2a06:8782:ffbb:1337::c8
 wikipedia			CNAME	jplitza
 
-1.ntp				AAAA	2a06:8782:ffbb:1337::1
-2.ntp				AAAA	2a06:8782:ffbb:1337::2
-3.ntp				AAAA	2a06:8782:ffbb:1337::3
-4.ntp				AAAA	2a06:8782:ffbb:1337::4
-5.ntp				AAAA	2a06:8782:ffbb:1337::5
-6.ntp				AAAA	2a06:8782:ffbb:1337::6
-
+; mortzu
 introducer.tahoe-lafs		A	10.196.0.129
 				AAAA	2a06:8782:ffbb:1337::81
-
 pads				AAAA	2a06:8782:ffbb:1337:7061::6473
-sip				A	10.196.2.50
-smokeping			AAAA	2a02:2919:1000:0:ba27:ebff:fe69:2879
-
-breminale			A	5.9.250.34
-				AAAA	2a01:4f8:160:44d0:ffb3::2
-
 tasks				A	176.9.147.213
 				AAAA	2a01:4f8:160:30c2::12
 
-webserver			A	185.117.213.242
-				AAAA	2a06:8782:ff00::f2
-
-status				CNAME	webserver
+; nebirosh
+sip				A	10.196.2.50
+smokeping			AAAA	2a02:2919:1000:0:ba27:ebff:fe69:2879
