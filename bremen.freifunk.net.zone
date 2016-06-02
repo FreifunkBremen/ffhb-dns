@@ -7,8 +7,6 @@ $TTL 1D
 				    1D)		; Negative Cache TTL
 
 				NS	dns
-				NS	ns-1.moritzrudert.de.
-				NS	ns2.he.net.
 
 				MX	50 mail
 
