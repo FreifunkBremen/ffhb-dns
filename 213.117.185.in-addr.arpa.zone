@@ -1,0 +1,17 @@
+$TTL 1D
+	IN	SOA	dns.bremen.freifunk.net. noc.bremen.freifunk.net. (
+		    2016061101	; Serial
+		    4H		; Refresh
+		    1H		; Retry
+		    2W		; Expire
+		    1D)		; Negative Cache TTL
+
+		NS	dns.bremen.freifunk.net.
+		NS	ns-1.moritzrudert.de.
+		NS	ns2.he.net.
+
+241		PTR	ipv6-downlink.bremen.freifunk.net.
+242		PTR	webserver.bremen.freifunk.net.
+243		PTR	dns.bremen.freifunk.net.
+244		PTR	mail.bremen.freifunk.net.
+245		PTR	vpn03.bremen.freifunk.net.
