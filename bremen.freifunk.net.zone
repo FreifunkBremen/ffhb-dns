@@ -89,6 +89,9 @@ briteline.breminale		AAAA	2a00:C380:DEAD:BBB2::2
 mgmt.breminale			A	46.19.95.67
 mgmt.breminale			AAAA	2a00:C380:DEAD:BBB2::3
 
+dashboard.breminale		A	46.19.95.67
+dashboard.breminale		AAAA	2a00:C380:DEAD:BBB2::3
+
 monitoring.breminale		A	46.19.95.68
 monitoring.breminale		AAAA	2a00:C380:DEAD:BBB2::4
 
