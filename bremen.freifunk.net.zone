@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2016070901	; Serial
+				    2016070902	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -97,6 +97,9 @@ observium.breminale		CNAME monitoring.breminale
 
 dns.breminale			A	46.19.95.69
 dns.breminale			AAAA	2a00:C380:DEAD:BBB2::5
+
+irc.breminale			A	46.19.95.70
+irc.breminale			AAAA	2a00:C380:DEAD:BBB2::6
 
 ; legacy old service subdomain
 services			DNAME	@
