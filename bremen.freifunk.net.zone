@@ -101,6 +101,9 @@ dns.breminale			AAAA	2a00:C380:DEAD:BBB2::5
 irc.breminale			A	46.19.95.70
 irc.breminale			AAAA	2a00:C380:DEAD:BBB2::6
 
+dhcp.breminale			A	46.19.95.71
+dhcp.breminale			AAAA	2a00:C380:DEAD:BBB2::7
+
 ; legacy old service subdomain
 services			DNAME	@
 
