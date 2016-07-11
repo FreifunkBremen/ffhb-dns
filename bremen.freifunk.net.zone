@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2016070902	; Serial
+				    2016071101	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -78,31 +78,31 @@ node				A	10.196.0.127
 mesh				CNAME	www
 
 ; Event stuff (current only for testing)
-mgmt				CNAME mgmt.breminale
+mgmt				CNAME	mgmt.breminale
 
 gw.breminale			A	46.19.95.65
-gw.breminale			AAAA	2a00:C380:DEAD:BBB2::1
+gw.breminale			AAAA	2a00:c380:dead:bbb2::1
 
 briteline.breminale		A	46.19.95.66
-briteline.breminale		AAAA	2a00:C380:DEAD:BBB2::2
+briteline.breminale		AAAA	2a00:c380:dead:bbb2::2
 
 mgmt.breminale			A	46.19.95.67
-mgmt.breminale			AAAA	2a00:C380:DEAD:BBB2::3
-dashboard.breminale		CNAME mgmt.breminale
-meshviewer.breminale		CNAME mgmt.breminale
+mgmt.breminale			AAAA	2a00:c380:dead:bbb2::3
+dashboard.breminale		CNAME	mgmt.breminale
+meshviewer.breminale		CNAME	mgmt.breminale
 
 monitoring.breminale		A	46.19.95.68
-monitoring.breminale		AAAA	2a00:C380:DEAD:BBB2::4
-observium.breminale		CNAME monitoring.breminale
+monitoring.breminale		AAAA	2a00:c380:dead:bbb2::4
+observium.breminale		CNAME	monitoring.breminale
 
 dns.breminale			A	46.19.95.69
-dns.breminale			AAAA	2a00:C380:DEAD:BBB2::5
+dns.breminale			AAAA	2a00:c380:dead:bbb2::5
 
 irc.breminale			A	46.19.95.70
-irc.breminale			AAAA	2a00:C380:DEAD:BBB2::6
+irc.breminale			AAAA	2a00:c380:dead:bbb2::6
 
 dhcp.breminale			A	46.19.95.71
-dhcp.breminale			AAAA	2a00:C380:DEAD:BBB2::7
+dhcp.breminale			AAAA	2a00:c380:dead:bbb2::7
 
 ; legacy old service subdomain
 services			DNAME	@
@@ -117,13 +117,11 @@ jplitza				A	10.196.0.200
 wikipedia			CNAME	jplitza
 
 ; mortzu
-introducer.tahoe-lafs		A	10.196.0.129
-				AAAA	2a06:8782:ffbb:1337::81
 monitoring			A	176.9.147.213
 				AAAA	2a01:4f8:160:30c2:2::1010
-pads				AAAA	2a06:8782:ffbb:1337:7061::6473
+pads				AAAA	2a01:4f8:160:30c2:2::1023
 tasks				A	176.9.147.213
-				AAAA	2a01:4f8:160:30c2::12
+				AAAA	2a01:4f8:160:30c2:2::1007
 
 ; nebirosh
 sip				A	10.196.2.50
