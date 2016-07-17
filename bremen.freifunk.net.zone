@@ -78,33 +78,6 @@ node				A	10.196.0.127
 
 mesh				CNAME	www
 
-; Event stuff (current only for testing)
-mgmt				CNAME	mgmt.breminale
-
-gw.breminale			A	46.19.95.65
-gw.breminale			AAAA	2a00:c380:dead:bbb2::1
-
-briteline.breminale		A	46.19.95.66
-briteline.breminale		AAAA	2a00:c380:dead:bbb2::2
-
-mgmt.breminale			A	46.19.95.67
-mgmt.breminale			AAAA	2a00:c380:dead:bbb2::3
-dashboard.breminale		CNAME	mgmt.breminale
-meshviewer.breminale		CNAME	mgmt.breminale
-
-monitoring.breminale		A	46.19.95.68
-monitoring.breminale		AAAA	2a00:c380:dead:bbb2::4
-observium.breminale		CNAME	monitoring.breminale
-
-dns.breminale			A	46.19.95.69
-dns.breminale			AAAA	2a00:c380:dead:bbb2::5
-
-irc.breminale			A	46.19.95.70
-irc.breminale			AAAA	2a00:c380:dead:bbb2::6
-
-dhcp.breminale			A	46.19.95.71
-dhcp.breminale			AAAA	2a00:c380:dead:bbb2::7
-
 ; legacy old service subdomain
 services			DNAME	@
 
