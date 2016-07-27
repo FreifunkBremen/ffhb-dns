@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2016071801	; Serial
+				    2016072701	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -67,6 +67,7 @@ webserver			A	185.117.213.242
 				AAAA	2a06:8782:ff00::f2
 wiki				CNAME	webserver
 www				CNAME	webserver
+tiles				CNAME	webserver
 
 ; mesh stuff
 nodes				NS	dns
