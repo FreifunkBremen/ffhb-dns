@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2016090201	; Serial
+				    2016090202	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -59,6 +59,8 @@ mail				A	185.117.213.244
 lists				A	185.117.213.244
 				AAAA	2a06:8782:ff00::f4
 				MX	50 lists
+
+list				CNAME	lists.planetcyborg.de.
 
 ; websites
 downloads			CNAME	webserver
