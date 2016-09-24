@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2016092401	; Serial
+				    2016092402	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -68,7 +68,7 @@ default._domainkey.lists	TXT	"v=DKIM1; k=rsa; t=s; s=email; p=MIGfMA0GCSqGSIb3DQ
 _adsp._domainkey		TXT	"dkim=all"
 default._domainkey		TXT	"v=DKIM1; k=rsa; t=s; s=email; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC9hC3SUqvZFeInFtGjPVyhNhKYRDliDR8OxZIeSbNXaK2RY7Zprd0Ql9o1h13bTR/DhiF7Oxj5AoFF++HvZrThtRiEJg9kkE0c8WH/n7DAeYg9NPzll33mrkFtsAbqS+bss3YC7KTdSdKeM0/p3K6cwPWNhM2yaWTugbFEIDfshQIDAQAB"
 
-list				CNAME	lists.planetcyborg.de.
+list				CNAME	lists
 
 ; websites
 downloads			CNAME	webserver
