@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns.bremen.freifunk.net. geno.fireorbit.de. (
-				    2016101702	; Serial
+				    2016101703	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
