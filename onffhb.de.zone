@@ -1,5 +1,5 @@
 $TTL 1D
-			IN	SOA	dns noc.bremen.freifunk.net. (
+			IN	SOA	dns.bremen.freifunk.net. geno.fireorbit.de. (
 				    2016101702	; Serial
 				    4H		; Refresh
 				    1H		; Retry
