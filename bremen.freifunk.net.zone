@@ -115,3 +115,6 @@ cloud				CNAME	ffhb-bilder.andromeda.hostedinspace.de.
 ; nebirosh
 sip				A	10.196.2.50
 smokeping			AAAA	2a02:2919:1000:0:ba27:ebff:fe69:2879
+
+; jantede
+jenkins				A	5.230.134.254
