@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns.bremen.freifunk.net. geno.fireorbit.de. (
-				    2016101703	; Serial
+				    2017030801	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -27,14 +27,11 @@ vpn02     IN AAAA fd2f:5119:f2c::2                        ; 2016-10-17 genofire
 vpn03     IN A    10.196.0.3                              ; 2016-10-17 genofire
 vpn03     IN AAAA fd2f:5119:f2c::3                        ; 2016-10-17 genofire
 
-vpn04     IN A    10.196.0.4                              ; 2016-10-17 genofire
-vpn04     IN AAAA fd2f:5119:f2c::4                        ; 2016-10-17 genofire
-
 vpn05     IN A    10.196.0.5                              ; 2016-10-17 genofire
 vpn05     IN AAAA fd2f:5119:f2c::5                        ; 2016-10-17 genofire
 
 vpn06     IN A    10.196.0.6                              ; 2016-10-17 genofire
 vpn06     IN AAAA fd2f:5119:f2c::6                        ; 2016-10-17 genofire
 
-        
+
 firegate  IN A    10.196.0.91                             ; 2016-10-29 genofire
