@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2017030802	; Serial
+				    2017051301	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -95,8 +95,8 @@ services			DNAME	@
 ; genofire
 breminale			A	5.9.250.34
 				AAAA	2a01:4f8:160:44d0:ffb3::2
-events				A	2a06:8782:ffbb:1337::5f
-mgmt				A	2a06:8782:ffbb:1337::5f
+events				AAAA	2a06:8782:ffbb:1337::5f
+mgmt				AAAA	2a06:8782:ffbb:1337::5f
 
 ; jplitza
 jplitza				A	10.196.0.200
