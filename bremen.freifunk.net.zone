@@ -102,6 +102,11 @@ jplitza				A	10.196.0.200
 wikipedia			CNAME	jplitza
 
 ; mortzu
+backup-1			AAAA	2001:678:3b8::6
+backup-2			AAAA	2001:470:1f0b:3c3::5
+gatemon-2			AAAA	2a06:8782:ffbb:1337::86
+gatemon-3			AAAA	2a06:8782:ffbb:1337::83
+gatemon-fes216			AAAA	2a06:8782:ffbb:1337::87
 monitoring			A	176.9.147.213
 				AAAA	2a01:4f8:160:30c2:2::1010
 pads				AAAA	2a01:4f8:160:30c2:2::1023
