@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2017063001	; Serial
+				    2017063101	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -129,10 +129,10 @@ monitoring.breminale		AAAA	2a00:C380:DEAD:CAFE::140
 
 ; CNAME events
 
-events				CNAME	emanager.breminale
-mgmt				CNAME	emanager.breminale
+events				CNAME	batman.breminale
+mgmt				CNAME	batman.breminale
 
-map.breminale			CNAME	emanager.breminale
+map.breminale			CNAME	batman.breminale
 
 ;---------------------------------------------------------
 
