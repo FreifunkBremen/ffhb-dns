@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2017063101	; Serial
+				    2017072001	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -89,52 +89,6 @@ mesh				CNAME	www
 
 ; legacy old service subdomain
 services			DNAME	@
-
-; ----------------------------------------------------
-; Breminale / Events
-; (genofire)
-
-rainer.breminale		A	37.72.151.130
-rainer.breminale		AAAA	2a00:C380:DEAD:CAFE::130
-
-rudi.breminale			A	37.72.151.131
-rudi.breminale			AAAA	2a00:C380:DEAD:CAFE::131
-
-rita.breminale			A	37.72.151.132
-rita.breminale			AAAA	2a00:C380:DEAD:CAFE::132
-
-syslog.breminale		A	37.72.151.133
-syslog.breminale		AAAA	2a00:C380:DEAD:CAFE::133
-
-librenms.breminale		A	37.72.151.134
-librenms.breminale		AAAA	2a00:C380:DEAD:CAFE::134
-
-irc.breminale			A	37.72.151.135
-irc.breminale			AAAA	2a00:C380:DEAD:CAFE::135
-
-dashboard.breminale		A	37.72.151.136
-dashboard.breminale		AAAA	2a00:C380:DEAD:CAFE::136
-
-erdbeerchen.breminale		A	37.72.151.137
-erdbeerchen.breminale		AAAA	2a00:C380:DEAD:CAFE::137
-
-emanager.breminale		A	37.72.151.138
-emanager.breminale		AAAA	2a00:C380:DEAD:CAFE::138
-
-batman.breminale		A	37.72.151.139
-batman.breminale		AAAA	2a00:C380:DEAD:CAFE::139
-
-monitoring.breminale		A	37.72.151.140
-monitoring.breminale		AAAA	2a00:C380:DEAD:CAFE::140
-
-; CNAME events
-
-events				CNAME	batman.breminale
-mgmt				CNAME	batman.breminale
-
-map.breminale			CNAME	batman.breminale
-
-;---------------------------------------------------------
 
 ; jplitza
 jplitza				A	10.196.0.200
