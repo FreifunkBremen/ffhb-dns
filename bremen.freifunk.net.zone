@@ -83,7 +83,7 @@ nodes				NS	dns
 				NS	ns2.he.net.
 
 node				A	10.196.0.127
-				AAAA	2a06:8782:ffbb:1337::127
+				AAAA	fd2f:5119:0f2c::127
 
 mesh				CNAME	www
 
