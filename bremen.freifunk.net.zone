@@ -18,6 +18,7 @@ $TTL 1D
 
 ; network stuff
 bre-1				A	31.209.95.196
+bre-2				A	109.69.65.57
 
 dns				A	185.117.213.243
 				AAAA	2a06:8782:ff00::f3
