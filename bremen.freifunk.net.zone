@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2018051902	; Serial
+				    2018051903	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -15,6 +15,9 @@ $TTL 1D
 
 				A	185.117.213.242
 				AAAA	2a06:8782:ff00::f2
+
+bgp-lwlcom01			A	185.117.213.128
+				AAAA	2A06:8782::1
 
 ; network stuff
 bre-1				A	185.117.213.248
