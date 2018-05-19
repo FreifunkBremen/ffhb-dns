@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2018051901	; Serial
+				    2018051902	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -79,6 +79,9 @@ huginn				CNAME	webserver
 grafana				CNAME	webserver
 map				CNAME	webserver
 
+jenkins				A	109.69.65.60
+				AAAA	2a02:16d0:1003:700::3c
+
 ; mesh stuff
 nodes				NS	dns
 				NS	ns-1.moritzrudert.de.
@@ -115,6 +118,3 @@ cloud				CNAME	ffhb-bilder.andromeda.hostedinspace.de.
 ; nebirosh
 sip				A	10.196.2.50
 smokeping			AAAA	2a02:2919:1000:0:ba27:ebff:fe69:2879
-
-; jantede
-jenkins				A	5.230.134.254
