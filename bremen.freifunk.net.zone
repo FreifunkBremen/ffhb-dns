@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2018051903	; Serial
+				    2018060101	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -81,6 +81,7 @@ tiles				CNAME	webserver
 huginn				CNAME	webserver
 grafana				CNAME	webserver
 map				CNAME	webserver
+inventory			CNAME	webserver
 
 jenkins				A	109.69.65.60
 				AAAA	2a02:16d0:1003:700::3c
