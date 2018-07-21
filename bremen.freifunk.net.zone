@@ -126,4 +126,8 @@ sip				A	10.196.2.50
 smokeping			AAAA	2a02:2919:1000:0:ba27:ebff:fe69:2879
 
 ; genofire
-mgmt				AAAA	2a06:8782:ffbb:1337::6e40:10
+mgmt				A	185.223.146.227
+
+
+babel-gw.breminale		A	185.223.146.227
+map.breminale			A	185.223.146.227
