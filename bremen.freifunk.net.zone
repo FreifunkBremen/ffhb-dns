@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2018072200	; Serial
+				    2018072300	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -134,3 +134,5 @@ babel-gw.breminale		AAAA	2a06:8782:ffbb:7::2
 
 map.breminale			A	185.223.146.227
 map.breminale			AAAA	2a06:8782:ffbb:7::2
+
+vmhost.breminale		A	185.223.146.226
