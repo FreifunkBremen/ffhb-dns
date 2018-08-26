@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2018081001	; Serial
+				    2018082601	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -55,8 +55,8 @@ vpn				CNAME	@
 5.ntp				AAAA	2a06:8782:ffbb:1337::5
 6.ntp				AAAA	2a06:8782:ffbb:1337::6
 
-syslog				A	185.117.213.249
-				AAAA	2a06:8782:ff00:0:5054:ff:fee4:808e
+syslog				A	109.69.65.58
+				AAAA	2a02:16d0:1003:700::3b
 
 ; mail
 mail				A	185.117.213.244
