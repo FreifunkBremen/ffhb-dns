@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2018082602	; Serial
+				    2018083101	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -122,7 +122,7 @@ tasks				A	109.69.68.67
 				AAAA	2001:678:3b8:5::1007
 
 ; timlukas
-cloud				CNAME	ffhb-bilder.andromeda.hostedinspace.de.
+cloud				CNAME	ffhb-bilder.andromeda.moritzrudert.de.
 
 ; nebirosh
 sip				A	10.196.2.50
