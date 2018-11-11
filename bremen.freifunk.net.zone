@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2018102801	; Serial
+				    2018111101	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -89,6 +89,7 @@ grafana				CNAME	webserver
 map				CNAME	webserver
 inventory			CNAME	webserver
 mgmt				CNAME	webserver
+tasks				CNAME	webserver
 
 jenkins				A	109.69.65.60
 				AAAA	2a02:16d0:1003:700::3c
@@ -117,8 +118,6 @@ gatemon-3			AAAA	2a06:8782:ffbb:1337::83
 gatemon-fes216			AAAA	2a06:8782:ffbb:1337::87
 monitoring			A	109.69.68.67
 				AAAA	2001:678:3b8:5::1010
-tasks				A	109.69.68.67
-				AAAA	2001:678:3b8:5::1007
 
 ; timlukas
 cloud				CNAME	ffhb-bilder.andromeda.moritzrudert.de.
