@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2018111101	; Serial
+				    2018112601	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -125,3 +125,5 @@ cloud				CNAME	ffhb-bilder.andromeda.moritzrudert.de.
 ; nebirosh
 sip				A	10.196.2.50
 smokeping			AAAA	2a02:2919:1000:0:ba27:ebff:fe69:2879
+
+offload01.schlachthof		A	185.223.145.118
