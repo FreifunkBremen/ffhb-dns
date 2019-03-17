@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2019012200	; Serial
+				    2019031700	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -15,7 +15,6 @@ $TTL 1D
 
 				A	185.117.213.242
 				AAAA	2a06:8782:ff00::f2
-_github-challenge-FreifunkBremen TXT 6f32404466
 
 bgp-lwlcom01			A	185.117.213.128
 				AAAA	2A06:8782::1
