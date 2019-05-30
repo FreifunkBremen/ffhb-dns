@@ -1,6 +1,6 @@
 $TTL 1D
 	IN	SOA	dns.bremen.freifunk.net. noc.bremen.freifunk.net. (
-		    2016082801	; Serial
+		    2019053001	; Serial
 		    4H		; Refresh
 		    1H		; Retry
 		    2W		; Expire
@@ -9,6 +9,9 @@ $TTL 1D
 		NS	dns.bremen.freifunk.net.
 		NS	ns-1.moritzrudert.de.
 		NS	ns2.he.net.
+
+7.3.3.1.b.b.f.f					NS	dns.bremen.freifunk.net.
+7.3.3.1.b.b.f.f					NS	ns-1.moritzrudert.de.
 
 1.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f	PTR	ipv6-downlink.bremen.freifunk.net.
 2.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f	PTR	webserver.bremen.freifunk.net.
