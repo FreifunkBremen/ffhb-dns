@@ -106,6 +106,10 @@ node				A	10.196.0.127
 
 mesh				CNAME	www
 
+; mesh stuff babel
+next				CNAME	www
+mesh.n				CNAME	www
+
 ; legacy old service subdomain
 services			DNAME	@
 
