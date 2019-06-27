@@ -60,6 +60,8 @@ vpn				CNAME	@
 syslog				A	109.69.65.58
 				AAAA	2a02:16d0:1003:700::3b
 
+events			30s	A	185.117.213.249
+			30s	AAAA	2a06:8782:ff00::f9
 ; mail
 mail				A	185.117.213.244
 				AAAA	2a06:8782:ff00::f4
