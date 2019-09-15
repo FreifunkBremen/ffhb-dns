@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2019082302	; Serial
+				    2019091501	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -27,6 +27,8 @@ bgp-plutex01			A	109.69.65.58
 ; network stuff
 bre-1				A	185.117.213.248
 bre-2				A	109.69.65.57
+
+code				A	185.117.213.226
 
 dns				A	185.117.213.243
 				AAAA	2a06:8782:ff00::f3
