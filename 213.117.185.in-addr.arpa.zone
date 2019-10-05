@@ -1,13 +1,13 @@
 $TTL 1D
 	IN	SOA	dns.bremen.freifunk.net. noc.bremen.freifunk.net. (
-		    2019091501	; Serial
+		    2019100500	; Serial
 		    4H		; Refresh
 		    1H		; Retry
 		    2W		; Expire
 		    1D)		; Negative Cache TTL
 
 		NS	dns.bremen.freifunk.net.
-		NS	ns-1.moritzrudert.de.
+		NS	ns2.afraid.org.
 		NS	ns2.he.net.
 
 226		PTR	code.bremen.freifunk.net.
