@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2019100500	; Serial
+				    2019110200	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -131,9 +131,8 @@ gatemon-3			AAAA	2a06:8782:ffbb:1337::83
 gatemon-fes216			AAAA	2a06:8782:ffbb:1337::87
 monitoring			A	109.69.68.67
 				AAAA	2001:678:3b8:5::1010
-
-; timlukas
-cloud				CNAME	ffhb-bilder.andromeda.moritzrudert.de.
+cloud				A	109.69.68.67
+				AAAA	2001:678:3b8:5::1020
 
 ; nebirosh
 sip				A	10.196.2.50
