@@ -1,6 +1,6 @@
 $TTL 1D
 	IN	SOA	dns.bremen.freifunk.net. noc.bremen.freifunk.net. (
-		    2019111800	; Serial
+		    2019111801	; Serial
 		    4H		; Refresh
 		    1H		; Retry
 		    2W		; Expire
@@ -13,6 +13,7 @@ $TTL 1D
 226		PTR	code.bremen.freifunk.net.
 227		PTR	vpn05.bremen.freifunk.net.
 228		PTR	vpn02.bremen.freifunk.net.
+229		PTR	vpn04.bremen.freifunk.net.
 241		PTR	ipv6-downlink.bremen.freifunk.net.
 242		PTR	webserver.bremen.freifunk.net.
 243		PTR	dns.bremen.freifunk.net.
