@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2019111802	; Serial
+				    2020010301	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -85,6 +85,7 @@ default._domainkey		TXT	"v=DKIM1; k=rsa; t=s; s=email; p=MIGfMA0GCSqGSIb3DQEBAQU
 list				CNAME	lists
 
 ; websites
+cloud				CNAME	webserver
 downloads			CNAME	webserver
 status				CNAME	webserver
 webserver			A	185.117.213.242
@@ -128,8 +129,6 @@ wikipedia			CNAME	jplitza
 ; mortzu
 monitoring			A	109.69.68.67
 				AAAA	2001:678:3b8:5::1010
-cloud				A	109.69.68.67
-				AAAA	2001:678:3b8:5::1020
 
 ; nebirosh
 sip				A	10.196.2.50
