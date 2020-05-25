@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2020010301	; Serial
+				    2020052501	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -127,8 +127,8 @@ jplitza				A	10.196.0.200
 wikipedia			CNAME	jplitza
 
 ; mortzu
-monitoring			A	109.69.68.67
-				AAAA	2001:678:3b8:5::1010
+monitoring			A	78.47.80.59
+				AAAA	2a01:4f8:c17:ada9::1014
 
 ; nebirosh
 sip				A	10.196.2.50
