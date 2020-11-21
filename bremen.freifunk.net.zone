@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2020052502	; Serial
+				    2020112101	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -11,7 +11,7 @@ $TTL 1D
 				NS	ns2.he.net.
 
 				MX	50 mail
-				SPF	"v=spf1 mx -all"
+				TXT	"v=spf1 mx -all"
 
 				A	185.117.213.242
 				AAAA	2a06:8782:ff00::f2
@@ -74,7 +74,7 @@ mail				A	185.117.213.244
 lists				A	185.117.213.244
 				AAAA	2a06:8782:ff00::f4
 				MX	50 lists
-				SPF	"v=spf1 mx -all"
+				TXT	"v=spf1 mx -all"
 
 _adsp._domainkey.lists		TXT	"dkim=all"
 default._domainkey.lists	TXT	"v=DKIM1; k=rsa; t=s; s=email; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCq5dupjOXnKpNouRuQ1z0zAeLnS+Pu1dtubTSzl+GP2tO7yPz31EYhjKuPHAhYZT6i7sKi56HAMucFiSHrw3uSuPDUFufuYMSTvDmGwkTan8DTMz8HN/s0AioAjqAeiTtpGgidxIz9xf05qpy8l8CdFHh8OHcAE/CuGzUzOMQs8wIDAQAB"
