@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2020112201	; Serial
+				    2020112501	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
@@ -13,7 +13,6 @@ $TTL 1D
 				MX	50 mail
 				SPF	"v=spf1 mx -all"
 				TXT	"v=spf1 mx -all"
-				TXT	"v=DMARC1;p=quarantine;pct=100;rua=mailto:postmaster@bremen.freifunk.net;adkim=r;aspf=r;p=none;sp=none"
 
 				A	185.117.213.242
 				AAAA	2a06:8782:ff00::f2
@@ -79,9 +78,12 @@ lists				A	185.117.213.244
 				SPF	"v=spf1 mx -all"
 				TXT	"v=spf1 mx -all"
 
+_dmarc.lists				TXT	"v=DMARC1;p=quarantine;pct=100;rua=mailto:postmaster@bremen.freifunk.net;adkim=r;aspf=r;p=none;sp=none"
+
 _adsp._domainkey.lists		TXT	"dkim=all"
 default._domainkey.lists	TXT	"v=DKIM1; k=rsa; t=s; s=email; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCq5dupjOXnKpNouRuQ1z0zAeLnS+Pu1dtubTSzl+GP2tO7yPz31EYhjKuPHAhYZT6i7sKi56HAMucFiSHrw3uSuPDUFufuYMSTvDmGwkTan8DTMz8HN/s0AioAjqAeiTtpGgidxIz9xf05qpy8l8CdFHh8OHcAE/CuGzUzOMQs8wIDAQAB"
 
+_dmarc				TXT	"v=DMARC1;p=quarantine;pct=100;rua=mailto:postmaster@bremen.freifunk.net;adkim=r;aspf=r;p=none;sp=none"
 _adsp._domainkey		TXT	"dkim=all"
 default._domainkey		TXT	"v=DKIM1; k=rsa; t=s; s=email; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC9hC3SUqvZFeInFtGjPVyhNhKYRDliDR8OxZIeSbNXaK2RY7Zprd0Ql9o1h13bTR/DhiF7Oxj5AoFF++HvZrThtRiEJg9kkE0c8WH/n7DAeYg9NPzll33mrkFtsAbqS+bss3YC7KTdSdKeM0/p3K6cwPWNhM2yaWTugbFEIDfshQIDAQAB"
 
