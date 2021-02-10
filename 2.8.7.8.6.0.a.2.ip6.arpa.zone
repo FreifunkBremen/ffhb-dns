@@ -1,6 +1,6 @@
 $TTL 1D
 	IN	SOA	dns.bremen.freifunk.net. noc.bremen.freifunk.net. (
-		    2021021001	; Serial
+		    2021021002	; Serial
 		    4H		; Refresh
 		    1H		; Retry
 		    2W		; Expire
@@ -17,6 +17,10 @@ $TTL 1D
 0.b.a.b.b.b.f.f					NS	dns.bremen.freifunk.net.
 0.b.a.b.b.b.f.f					NS	ns2.afraid.org.
 0.b.a.b.b.b.f.f					NS	ns2.he.net.
+
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	PTR	bgp-lwlcom01.bremen.freifunk.net.
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f	PTR	bgp-lwlcom01.bremen.freifunk.net.
+2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	PTR	bgp-plutex01.bremen.freifunk.net.
 
 1.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f	PTR	ipv6-downlink.bremen.freifunk.net.
 2.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f	PTR	webserver.bremen.freifunk.net.
