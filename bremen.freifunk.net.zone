@@ -143,4 +143,7 @@ monitoring			A	78.47.80.59
 sip				A	10.196.2.50
 smokeping			AAAA	2a02:2919:1000:0:ba27:ebff:fe69:2879
 
+; jw
+homare                          AAAA    2a06:8782:ffbb:1337::11
+
 offload01.schlachthof		A	185.223.145.118
