@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-				    2021073001	; Serial
+				    2021073002	; Serial
 				    4H		; Refresh
 				    1H		; Retry
 				    2W		; Expire
