@@ -21,7 +21,6 @@ $TTL 1D
 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	PTR	bgp-lwlcom01.bremen.freifunk.net.
 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f	PTR	bgp-lwlcom01.bremen.freifunk.net.
 2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	PTR	bgp-plutex01.bremen.freifunk.net.
-1.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.7.3.3.1.b.b.f.f	PTR	homare.bremen.freifunk.net.
 
 1.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f	PTR	ipv6-downlink.bremen.freifunk.net.
 2.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f	PTR	webserver.bremen.freifunk.net.
@@ -35,3 +34,5 @@ $TTL 1D
 3.e.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f	PTR	vpn05.bremen.freifunk.net.
 4.e.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f	PTR	vpn02.bremen.freifunk.net.
 5.e.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f	PTR	vpn04.bremen.freifunk.net.
+
+1.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.7.3.3.1.b.b.f.f	PTR	homare.bremen.freifunk.net.
