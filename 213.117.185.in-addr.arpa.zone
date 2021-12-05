@@ -1,10 +1,10 @@
 $TTL 1D
 	IN	SOA	dns.bremen.freifunk.net. noc.bremen.freifunk.net. (
-		    2019111801	; Serial
-		    4H		; Refresh
-		    1H		; Retry
-		    2W		; Expire
-		    1D)		; Negative Cache TTL
+			2019111801	; Serial
+			4H		; Refresh
+			1H		; Retry
+			2W		; Expire
+			1D)		; Negative Cache TTL
 
 		NS	dns.bremen.freifunk.net.
 		NS	ns2.afraid.org.
