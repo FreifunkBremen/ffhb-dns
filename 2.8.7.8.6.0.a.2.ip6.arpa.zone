@@ -34,5 +34,7 @@ $TTL 1D
 3.e.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f	PTR	vpn05.bremen.freifunk.net.
 4.e.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f	PTR	vpn02.bremen.freifunk.net.
 5.e.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f	PTR	vpn04.bremen.freifunk.net.
+8.e.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f	PTR	vpn07.bremen.freifunk.net.
+9.e.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f	PTR	vpn08.bremen.freifunk.net.
 
 1.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.7.3.3.1.b.b.f.f	PTR	homare.bremen.freifunk.net.

@@ -14,6 +14,8 @@ $TTL 1D
 227		PTR	vpn05.bremen.freifunk.net.
 228		PTR	vpn02.bremen.freifunk.net.
 229		PTR	vpn04.bremen.freifunk.net.
+232		PTR	vpn07.bremen.freifunk.net.
+233		PTR	vpn08.bremen.freifunk.net.
 241		PTR	ipv6-downlink.bremen.freifunk.net.
 242		PTR	webserver.bremen.freifunk.net.
 243		PTR	dns.bremen.freifunk.net.
