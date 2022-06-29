@@ -26,3 +26,4 @@ $TTL 1D
 248		PTR	bre-1.bremen.freifunk.net.
 249		PTR	babel-gw-lwlcom.bremen.freifunk.net.
 250		PTR	plat.bremen.freifunk.net.
+253		PTR	vpn09.bremen.freifunk.net.
