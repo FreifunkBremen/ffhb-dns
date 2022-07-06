@@ -1,6 +1,6 @@
 $TTL 1D
 	IN	SOA	dns.bremen.freifunk.net. noc.bremen.freifunk.net. (
-			2022063001	; Serial
+			2022070601	; Serial
 			4H		; Refresh
 			1H		; Retry
 			2W		; Expire
@@ -31,6 +31,7 @@ $TTL 1D
 7.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f	PTR	vpn01.bremen.freifunk.net.
 9.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f	PTR	babel-gw-lwlcom.bremen.freifunk.net.
 b.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f	PTR	ipv6-downlink.bremen.freifunk.net.
+d.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f	PTR	vpn09.bremen.freifunk.net.
 
 1.e.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f	PTR	jenkins.bremen.freifunk.net.
 2.e.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f	PTR	code.bremen.freifunk.net.
@@ -41,6 +42,5 @@ b.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.f.f	PTR	ipv6-downlink.bremen.freifun
 7.e.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f	PTR	monitoring.bremen.freifunk.net.
 8.e.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f	PTR	vpn07.bremen.freifunk.net.
 9.e.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f	PTR	vpn08.bremen.freifunk.net.
-d.f.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f	PTR	vpn09.bremen.freifunk.net.
 
 1.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.7.3.3.1.b.b.f.f	PTR	homare.bremen.freifunk.net.
