@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns.bremen.freifunk.net. geno.fireorbit.de. (
-					2022000000	; Serial
+					2022070000	; Serial
 					4H		; Refresh
 					1H		; Retry
 					2W		; Expire
@@ -55,7 +55,7 @@ node		IN AAAA		fd00:42:100::127
 ;;
 mgmt		IN AAAA		fd00:42:100::10   ; - no idea / ssh?
 
-alerts		IN CNAME	alerts.sum7.eu    ; alertmanager - genofire host it
+alerts		IN CNAME	alerts.sum7.eu.    ; alertmanager - genofire host it
 
 mon		IN AAAA		fd00:42:100::10   ; prometheus
 
