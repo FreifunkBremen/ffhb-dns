@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns.bremen.freifunk.net. geno.fireorbit.de. (
-					2019100500	; Serial
+					2022000000	; Serial
 					4H		; Refresh
 					1H		; Retry
 					2W		; Expire
@@ -34,9 +34,9 @@ vpn05		IN AAAA		fd2f:5119:f2c::5	; 2018-11-03 genofire
 vpn06		IN A		10.196.0.6		; 2018-11-03 genofire
 vpn06		IN AAAA		fd2f:5119:f2c::6	; 2018-11-03 genofire
 
-; current node
-node		IN A		10.196.0.127		; 2018-11-03 genofire
-node		IN AAAA		fd2f:5119:f2c::127	; 2018-11-03 genofire
+; current node - temp disabled
+;node		IN A		10.196.0.127		; 2018-11-03 genofire
+;node		IN AAAA		fd2f:5119:f2c::127	; 2018-11-03 genofire
 
 ;; SERVICES
 
@@ -47,3 +47,18 @@ minecraft	IN A		10.196.122.228		; 2019-02-07 hias
 minecraft	IN AAAA		fd2f:5119:f2c:0:da9d:67ff:feca:eb44	;	2019-02-07 hias
 
 ; ENDE
+
+
+;; Breminale 2022 - temp
+node		IN AAAA		fd00:42:100::127
+
+;;
+mgmt		IN AAAA		fd00:42:100::10   ; - no idea / ssh?
+
+alerts		IN CNAME	alerts.sum7.eu    ; alertmanager - genofire host it
+
+mon		IN AAAA		fd00:42:100::10   ; prometheus
+
+map             IN AAAA         fd00:42:100::10
+
+code		IN AAAA		fd00:42:100::10   ; code-server maybe
