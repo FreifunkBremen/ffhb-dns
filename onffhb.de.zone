@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns.bremen.freifunk.net. geno.fireorbit.de. (
-					2022071000	; Serial
+					2022071100	; Serial
 					4H		; Refresh
 					1H		; Retry
 					2W		; Expire
@@ -54,15 +54,18 @@ node		IN AAAA		fd00:42:100::127
 
 ;;
 mgmt		IN AAAA		fd00:42:100::10           ; - no idea / ssh?
-mgmt		IN AAAA         2a01:4f8:161:91d1:ffbb::1 ; temp genofire
+; mgmt		IN AAAA         2a01:4f8:161:91d1:ffbb::1 ; temp genofire
+mgmt		IN AAAA		2a00:c380:c100:3b10::10   ; lwlcom from vl-mgmt
 
 alerts		IN CNAME	vela-www.h.sum7.eu.       ; alertmanager - genofire host it
 
 mon		IN AAAA		fd00:42:100::10           ; prometheus
-mon		IN AAAA         2a01:4f8:161:91d1:ffbb::1 ; temp genofire
+; mon		IN AAAA         2a01:4f8:161:91d1:ffbb::1 ; temp genofire
+mon		IN AAAA		2a00:c380:c100:3b10::10   ; lwlcom from vl-mgmt
 
 map		IN AAAA         fd00:42:100::10           ; own map
-map		IN AAAA         2a01:4f8:161:91d1:ffbb::1 ; temp genofire
+; map		IN AAAA         2a01:4f8:161:91d1:ffbb::1 ; temp genofire
+map		IN AAAA		2a00:c380:c100:3b10::10   ; lwlcom from vl-mgmt
 
 code		IN AAAA		fd00:42:100::10           ; code-server maybe
 code		IN AAAA         2a01:4f8:161:91d1:ffbb::1 ; temp genofire
