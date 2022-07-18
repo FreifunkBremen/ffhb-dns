@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns.bremen.freifunk.net. geno.fireorbit.de. (
-					2022071200	; Serial
+					2022071800	; Serial
 					4H		; Refresh
 					1H		; Retry
 					2W		; Expire
@@ -34,9 +34,9 @@ vpn05		IN AAAA		fd2f:5119:f2c::5	; 2018-11-03 genofire
 vpn06		IN A		10.196.0.6		; 2018-11-03 genofire
 vpn06		IN AAAA		fd2f:5119:f2c::6	; 2018-11-03 genofire
 
-; current node - temp disabled
-;node		IN A		10.196.0.127		; 2018-11-03 genofire
-;node		IN AAAA		fd2f:5119:f2c::127	; 2018-11-03 genofire
+; current node
+node		IN A		10.196.0.127		; 2018-11-03 genofire
+node		IN AAAA		fd2f:5119:f2c::127	; 2018-11-03 genofire
 
 ;; SERVICES
 
@@ -47,26 +47,3 @@ minecraft	IN A		10.196.122.228		; 2019-02-07 hias
 minecraft	IN AAAA		fd2f:5119:f2c:0:da9d:67ff:feca:eb44	;	2019-02-07 hias
 
 ; ENDE
-
-
-;; Breminale 2022 - temp
-node		IN AAAA		fd00:42:100::127
-
-;;
-mgmt		IN AAAA		fd00:42:100::10           ; - no idea / ssh?
-; mgmt		IN AAAA         2a01:4f8:161:91d1:ffbb::1 ; temp genofire
-mgmt		IN AAAA		2a00:c380:c100:3b10::10   ; lwlcom from vl-mgmt
-
-alerts		IN CNAME	k8s.n.sum7.eu.            ; karma - genofire host it
-
-mon		IN AAAA		fd00:42:100::10           ; prometheus
-; mon		IN AAAA         2a01:4f8:161:91d1:ffbb::1 ; temp genofire
-mon		IN AAAA		2a00:c380:c100:3b10::10   ; lwlcom from vl-mgmt
-
-map		IN AAAA         fd00:42:100::10           ; own map
-; map		IN AAAA         2a01:4f8:161:91d1:ffbb::1 ; temp genofire
-map		IN AAAA		2a00:c380:c100:3b10::10   ; lwlcom from vl-mgmt
-
-code		IN AAAA		fd00:42:100::10           ; code-server maybe
-; code		IN AAAA         2a01:4f8:161:91d1:ffbb::1 ; temp genofire
-code		IN AAAA		2a00:c380:c100:3b10::10   ; lwlcom from vl-mgmt
