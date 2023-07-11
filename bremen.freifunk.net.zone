@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-					2023071100	; Serial
+					2023071101	; Serial
 					4H		; Refresh
 					1H		; Retry
 					2W		; Expire
@@ -131,7 +131,9 @@ next				CNAME	www
 mesh.n				CNAME	www
 
 ; breminale
-breminale			NS	37.72.151.227
+breminale-ext			A	37.72.151.227
+				AAAA	2a00:c380:c110:3b::2
+breminale			NS	breminale-ext
 
 ; legacy old service subdomain
 services			DNAME	@
