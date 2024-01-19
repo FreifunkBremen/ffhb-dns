@@ -1,6 +1,6 @@
 $TTL 1D
 	IN	SOA	dns.bremen.freifunk.net. noc.bremen.freifunk.net. (
-			2023121801	; Serial
+			2024011901	; Serial
 			4H		; Refresh
 			1H		; Retry
 			2W		; Expire
@@ -17,13 +17,13 @@ $TTL 1D
 231		PTR	monitoring.bremen.freifunk.net.
 232		PTR	vpn07.bremen.freifunk.net.
 233		PTR	vpn08.bremen.freifunk.net.
+237		PTR	mail.bremen.freifunk.net.
 238		PTR	gw.bremen.freifunk.net.
 
 ; 185.117.213.240/28
 241		PTR	ipmi.bre-3.bremen.freifunk.net.
 242		PTR	webserver.bremen.freifunk.net.
 243		PTR	dns.bremen.freifunk.net.
-244		PTR	mail.bremen.freifunk.net.
 245		PTR	bre-3.bremen.freifunk.net.
 246		PTR	ffmap.bremen.freifunk.net.
 247		PTR	vpn01.bremen.freifunk.net.
