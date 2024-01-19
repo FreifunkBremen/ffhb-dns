@@ -1,6 +1,6 @@
 $TTL 1D
 			IN	SOA	dns noc.bremen.freifunk.net. (
-					2023121801	; Serial
+					2024011901	; Serial
 					4H		; Refresh
 					1H		; Retry
 					2W		; Expire
@@ -78,11 +78,11 @@ babel-gw-lwlcom		30s	A	185.117.213.249
 			30s	AAAA	2a06:8782:ff00::f9
 
 ; mail
-mail				A	185.117.213.244
-				AAAA	2a06:8782:ff00::f4
+mail				A	185.117.213.237
+				AAAA	2a06:8782:ff00::ed
 
-lists				A	185.117.213.244
-				AAAA	2a06:8782:ff00::f4
+lists				A	185.117.213.237
+				AAAA	2a06:8782:ff00::ed
 				MX	50 lists
 				SPF	"v=spf1 mx -all"
 				TXT	"v=spf1 mx -all"
