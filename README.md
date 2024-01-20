@@ -8,5 +8,5 @@ Also, please use tabs (instead of spaces) for consistent formatting.
 
 ## Applying Changes
 To actually activate any changes, someone with admin access needs to
-* make sure the changes are contained in the "dns" repository on the internal Git server
+* make sure the changes are contained in the "ffhb-dns" repository on the Github server
 * log in on the DNS server and run `update-dns-zones.sh` to pull and activate the latest Git repository changes.
